@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file>
+<body>
+    <!-- BUTTONS -->
+    <trans-unit id="tl_news.softgarden_import.0">
+        <target>Import advertisements</target>
+    </trans-unit>
+    <trans-unit id="tl_news.softgarden_import.1">
+        <target>Trigger a new import of job advertisements from softgarden</target>
+    </trans-unit>
+</body>
+</file>
+</xliff>

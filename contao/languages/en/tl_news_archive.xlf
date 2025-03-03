@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file>
+<body>
+    <!-- LEGENDS -->
+    <trans-unit id="tl_news_archive.softgarden_legend">
+        <target>softgarden</target>
+    </trans-unit>
+    <!-- FIELDS -->
+    <trans-unit id="tl_news_archive.softgarden_enable.0">
+        <target>Enable softgarden import</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_enable.1">
+        <target>Enable the import of job advertisements from softgarden.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_client_id.0">
+        <target>Client ID</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_client_id.1">
+        <target>Please enter the Client ID as created in softgarden.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_channel.0">
+        <target>Channel</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_channel.1">
+        <target>Please select the correct channel for the job advertisements.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_language.0">
+        <source>Language</source>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_language.1">
+        <source>Please select the desired language for the job advertisements.</source>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_default_author.0">
+        <target>Author</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_default_author.1">
+        <target>Here you can change the author which will be set for all imported advertisements.</target>
+    </trans-unit>
+</body>
+</file>
+</xliff>

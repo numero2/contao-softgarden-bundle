@@ -1,0 +1,29 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    numero2_softgarden.cron.import_advertisements:
+        class: numero2\SoftgardenBundle\Cron\ImportAdvertisementsCron
+        arguments:
+            - '@numero2_softgarden.import.softgarden'
+
+    numero2_softgarden.api.softgarden:
+        class: numero2\SoftgardenBundle\API\SoftgardenAPI
+        public: true
+        arguments:
+            - '@http_client'
+            - '@logger'
+
+    numero2_softgarden.import.softgarden:
+        class: numero2\SoftgardenBundle\Import\SoftgardenImport
+        public: true
+        arguments:
+            - '@contao.framework'
+            - '@database_connection'
+            - '@request_stack'
+            - '@contao.routing.scope_matcher'
+            - '@logger'
+            - '@contao.translation.translator'
+            - '@event_dispatcher'
+            - '@numero2_softgarden.api.softgarden'

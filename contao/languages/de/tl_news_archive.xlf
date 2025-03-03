@@ -1,0 +1,42 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file>
+<body>
+    <!-- LEGENDS -->
+    <trans-unit id="tl_news_archive.softgarden_legend">
+        <target>softgarden</target>
+    </trans-unit>
+    <!-- FIELDS -->
+    <trans-unit id="tl_news_archive.softgarden_enable.0">
+        <target>Softgarden-Import aktivieren</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_enable.1">
+        <target>Aktiviert den Import von Stellenanzeigen aus softgarden.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_client_id.0">
+        <target>Client ID</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_client_id.1">
+        <target>Bitte geben Sie die von softgarden generierte Client ID ein.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_channel.0">
+        <target>Kanal</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_channel.1">
+        <target>Bitte wählen Sie den korrekten Kanal für Stellenanzeigen.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_language.0">
+        <target>Sprache</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_language.1">
+        <target>Bitte wählen Sie die gewünschte Sprache aus.</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_default_author.0">
+        <target>Autor</target>
+    </trans-unit>
+    <trans-unit id="tl_news_archive.softgarden_default_author.1">
+        <target>Hier können Sie den Standard-Autor für importierte Stellenanzeigen aus softgarden auswählen.</target>
+    </trans-unit>
+</body>
+</file>
+</xliff>

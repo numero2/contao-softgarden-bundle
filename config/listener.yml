@@ -1,0 +1,16 @@
+services:
+    _defaults:
+        autoconfigure: true
+        public: true
+
+    numero2_softgarden.listener.data_container.news_archive:
+        class: numero2\SoftgardenBundle\EventListener\DataContainer\NewsArchiveListener
+        arguments:
+            - '@contao.translation.translator'
+            - '@contao.intl.locales'
+            - '@numero2_softgarden.api.softgarden'
+
+    numero2_softgarden.listener.data_container.news:
+        class: numero2\SoftgardenBundle\EventListener\DataContainer\NewsListener
+        arguments:
+            - '@contao.framework'

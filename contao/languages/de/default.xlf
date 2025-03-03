@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<xliff version="1.1">
+<file>
+<body>
+    <trans-unit id="softgarden.msg.import_success">
+        <target>Stellenanzeigen erfolgreich importiert. %d neue Stellen, %d aktualisiert.</target>
+    </trans-unit>
+    <trans-unit id="softgarden.msg.import_error">
+        <target>Es gab ein Problem währen des Imports der neuen Stellenanzeigen. Bitte schau in das System-Log.</target>
+    </trans-unit>
+</body>
+</file>
+</xliff>
