@@ -156,9 +156,9 @@ class SoftgardenAPI {
      * @param string $method
      * @param bool $cache If the response should be cached
      *
-     * @return object|null
+     * @return array|object|null
      */
-    private function send( string $path='', string $method='GET', bool $cache=false ): ?object {
+    private function send( string $path='', string $method='GET', bool $cache=false ): array|object|null {
 
         // return result from cache if available
         if( $cache && isset($this->responseCache[$path]) ) {
@@ -184,13 +184,13 @@ class SoftgardenAPI {
         try {
 
             if( $response->getStatusCode(false) !== 200 ) {
-                //$this->logger->log(LogLevel::ERROR, 'Could not request job advertisements from softgarden ('.$uri.'), received status '.$response->getStatusCode(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::ERROR)]);
+                $this->logger->log(LogLevel::ERROR, 'Could not request job advertisements from softgarden ('.$uri.'), received status '.$response->getStatusCode(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::ERROR)]);
                 return null;
             }
 
         } catch( Exception $e ) {
 
-            //$this->logger->log(LogLevel::ERROR, 'Could not request job advertisements from softgarden ('.$uri.'). '.$e->getMessage(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::ERROR)]);
+            $this->logger->log(LogLevel::ERROR, 'Could not request job advertisements from softgarden ('.$uri.'). '.$e->getMessage(), ['contao' => new ContaoContext(__METHOD__, ContaoContext::ERROR)]);
             return null;
         }
 
